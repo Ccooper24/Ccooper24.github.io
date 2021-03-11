@@ -1,0 +1,53 @@
+body {
+  background-image: linear-gradient(gray, black);
+  height: 1000px;
+  font-family: 'Papyrus', fantasy;
+}
+
+#gradient {
+  background-color: black;
+}
+
+#content {
+  background-color: red;
+  text-align: center;
+  font-weight: bold;
+}
+
+#headerBox {
+  background-color: blue;
+}
+
+#linksBox {
+  background-color: orange;
+}
+
+#paraBoxes {
+  background-color: cyan;
+}
+
+.paraBox {
+  background-color: green;
+}
+
+#images {
+  background-color: purple;
+  padding: 10px 0;
+}
+
+div {
+  border-style: groove;
+  border-width: 5px;
+  border-color: #000000;
+  margin: 5px;
+}
+
+img {
+  align-content: center;
+}
+
+a {
+  color: purple;
+  font-weight: bolder;
+
+}
