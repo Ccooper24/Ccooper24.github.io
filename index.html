@@ -1,29 +1,71 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <meta charset="UTF-8">
-        <meta name="apple-mobile-web-app-capable" content="yes">
-        <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-        <meta name="viewport" content="user-scalable=no">
-        <link rel="icon" href="icon/icon.png" type="image/png">
-        <link rel="apple-touch-icon" href="icon/icon.png">
-        <link rel="stylesheet" type="text/css" href="fonts/gamefont.css">
-        <title>Get To School 2: Electric Boogaloo</title>
-    </head>
-    <body style="background-color: black">
-        <script type="text/javascript" src="js/libs/pixi.js"></script>
-        <script type="text/javascript" src="js/libs/pixi-tilemap.js"></script>
-        <script type="text/javascript" src="js/libs/pixi-picture.js"></script>
-        <script type="text/javascript" src="js/libs/fpsmeter.js"></script>
-        <script type="text/javascript" src="js/libs/lz-string.js"></script>
-        <script type="text/javascript" src="js/libs/iphone-inline-video.browser.js"></script>
-        <script type="text/javascript" src="js/rpg_core.js"></script>
-        <script type="text/javascript" src="js/rpg_managers.js"></script>
-        <script type="text/javascript" src="js/rpg_objects.js"></script>
-        <script type="text/javascript" src="js/rpg_scenes.js"></script>
-        <script type="text/javascript" src="js/rpg_sprites.js"></script>
-        <script type="text/javascript" src="js/rpg_windows.js"></script>
-        <script type="text/javascript" src="js/plugins.js"></script>
-        <script type="text/javascript" src="js/main.js"></script>
-    </body>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>Website</title>
+  <link rel="stylesheet" href="css/master.css">
+</head>
+
+<body>
+  <div id="gradient">
+    <div id="content">
+      <div id="headerBox">
+        <h1>Epic Gamer Website</h1>
+      </div>
+      <div id="linksBox">
+        | <a href="index.html">Home</a> |
+        <a href="game.html">Game</a> |
+        <a href="">Favorite 1</a> |
+        <a href="">Favorite 2</a> |
+        <a href="">Favorite 3</a> |
+      </div>
+      <div id="paraBoxes">
+        <div class="paraBox">
+          <h3>Home</h3>
+          <p>This is my website.</p>
+        </div>
+        <div class="paraBox">
+          <h3>Game</h3>
+          <p>This is my game.</p>
+        </div>
+        <div class="paraBox">
+          <h3>Favorite 1</h3>
+          <p>This is my favorite 1.</p>
+        </div>
+        <div class="paraBox">
+          <h3>Favorite 2</h3>
+          <p>This is my favorite 2.</p>
+        </div>
+        <div class="paraBox">
+          <h3>Favorite 3</h3>
+          <p>This is my favorite 3.</p>
+        </div>
+      </div>
+      <div id="images">
+        <img src="RPG.png" alt="RPG Maker">
+      </div>
+    </div>
+  </div>
+  <script type="text/javascript" defer>
+    var welcomePhrase = [
+      'Welcome!',
+      'Subscribe to Pewdiepie!',
+      'Fortnite is gud!',
+      'Minecraft',
+      'Apples am I right chat?',
+      'RNG is funny',
+      'This is a website',
+      'RPG Maker MV',
+      '...',
+      'Epic Gamer Website'
+    ]
+    var randomNumber = Math.random();
+    randomNumber = randomNumber * welcomePhrase.length
+    randomNumber = Math.floor(randomNumber)
+    var header = document.getElementById('headerBox');
+    header.innerHTML = "<h1>" + welcomePhrase[randomNumber] + "</h1>"
+  </script>
+</body>
+
 </html>
